@@ -1,0 +1,27 @@
+[alg settings]
+
+method = 50NL
+config = 4x16
+num_phantoms = 43    
+num_test = 5       
+
+[data paths]
+
+path_phantoms = PhantomDataBase.mat
+path_reconstructions = ReconstructionDataBaseNL.mat
+path_graph_structure = 3D_ECT_Combined_50itNL_RF0_8.mat
+
+path_train_data = train_graphs_pure.pkl
+path_test_data = test_graphs_pure.pkl
+
+[train settings]
+
+best_weights = bestWeights.h5
+last_weights = lastWeights.h5
+num_epochs = 5000
+batch_size = 5
+
+[pred settings]
+
+path_predicted_phantoms_hard = PhantomsPredicted_hard.mat
+path_predicted_phantoms_soft = PhantomsPredicted_soft.mat
